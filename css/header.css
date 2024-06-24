@@ -1,0 +1,199 @@
+/****** General ***********/
+.logo {
+    font-size: 24px;
+    color: #0065FC;
+    font-weight: bold;
+}
+
+nav{
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #0065FC;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-section {
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.search-section h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.search-section p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.location-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+}
+
+.location-input i {
+    margin-right: 10px;
+    color: #333;
+}
+
+.location-input input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0065FC;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filters span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.filters > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filters > div a{
+    margin: 0px 4px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 13px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.filter:hover {
+    background-color: #DEEBFF;
+    color: #0065FC;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+    min-width: 200px;
+}
+
+.footer-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-item {
+    margin-bottom: 5px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1450px) {
+    .filters{
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 925px) {
+    nav{
+        flex-direction: column;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .filters div{
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+    }
+    .filters div a{
+        margin-bottom: 10px;
+    }
+
+    .footer{
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .footer-section{
+        margin-bottom: 30px;
+    }
+}

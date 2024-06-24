@@ -1,0 +1,59 @@
+
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    background-color: #F2F2F2;
+    color: #333;
+    line-height: 1.6;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    transition: 0.2s all;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+@media (max-width: 1450px){
+    body{
+        padding: 0;
+    }
+    header{
+        padding: 8px 0;
+    }
+}
