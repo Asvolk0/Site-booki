@@ -12,6 +12,7 @@
 .activities h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    margin-left: 25px;
 }
 
 .activities h3 {
@@ -32,7 +33,7 @@
 
 .activities .card {
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 20px 20px 0px 0px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     flex: 1 1 calc(25% - 20px);
@@ -40,7 +41,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    height: 350px;
+    height: 439px;
 }
 
 .activities .card img {
@@ -78,7 +79,7 @@
 
     .activities-card{
         width: 80%;
-        border-radius: 20px;
+        border-radius: 20px 20px 0px 0px;
     }
 
     .activities-card img{
