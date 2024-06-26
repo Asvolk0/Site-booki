@@ -237,8 +237,8 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     .activities .card2 {
-        width: Fill 375px;
-        height: Hug 965.02px;
+        width: 375px;
+        height: 965.02px;
         padding: 30px;
         gap: 30px;
     }       
