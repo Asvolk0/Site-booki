@@ -1,10 +1,6 @@
-.activities{
-    margin-top: 25px;
-}
-
 .activities {
+    margin-top: 25px;
     width: 100%;
-    max-width: 1200px;
     margin: 0 0;
     padding: 20px 0;
 }
@@ -33,7 +29,7 @@
 
 .activities .card {
     background-color: #fff;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     flex: 1 1 calc(25% - 20px);
