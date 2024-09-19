@@ -208,6 +208,14 @@ a {
         flex-direction: column-reverse;
     }
 
+    .hebergements-cards img{
+        width: 100%;
+    }
+
+    .hebergements-and-populaires section {
+        background-color: transparent;
+    }
+
     .populaires{
         margin-bottom: 20px;
     }

@@ -84,7 +84,7 @@
 
     .card-content h3{
         justify-content: start;
-        margin: 10px 0 10px 25px;
+        margin-top: 10px;
     }
 }
 
@@ -92,5 +92,6 @@
     .activities .card2 {
         flex: 1 1 100%; /* 1 carte par rangée */
         margin: 10px 0; /* Ajustement de la marge pour une mise en page en une seule colonne */
+        width: 100%;
     }
 }
