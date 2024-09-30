@@ -17,6 +17,17 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    position: relative;
+}
+
+nav ul .active::before{
+    content: '';
+    position: absolute;
+    width: 59%;
+    height: 4px;
+    background-color: #0065FC;
+    top: -26px;
+    left: 0;
 }
 
 nav a {
@@ -175,11 +186,22 @@ button .fa-solid{
         align-items: start;
         margin-bottom: 20px;
     }
+
+    nav ul .active::before{
+        top: -14px;
+    }
+
 }
 
 @media (max-width: 925px) {
     nav{
         flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul .active::before{
+        top: 150%;
+        width: 50%;
     }
 
     button .fa-solid{
