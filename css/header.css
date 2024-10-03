@@ -19,14 +19,9 @@ nav ul {
     position: relative;
 }
 
-nav ul .active::before{
-    content: '';
-    position: absolute;
-    width: 59%;
-    height: 4px;
-    background-color: #0065FC;
-    top: -26px;
-    left: 0;
+nav li:hover {
+    border-top: solid #0065FC;
+    color: #0065FC;
 }
 
 nav a {
@@ -198,9 +193,9 @@ button .fa-solid{
         padding: 0;
     }
 
-    nav ul .active::before{
-        top: 150%;
-        width: 50%;
+    header li:hover {
+        border-bottom: solid 2px #0065FC;
+        border-top-color: white;
     }
 
     button .fa-solid{
