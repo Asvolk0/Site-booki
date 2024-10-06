@@ -215,6 +215,10 @@ a {
 }
 
 @media (max-width: 768px){
+    .main-container{
+        width: 95%;
+    }
+
     .hebergements-and-populaires{
         flex-direction: column-reverse;
     }
