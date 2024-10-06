@@ -1,6 +1,6 @@
 .main-container {
-    width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 25px;
     background-color: #fff;
 }
@@ -170,6 +170,7 @@ a {
 
     .hebergements {
         width: 100%;
+        padding: 0;
     }
 
     .hebergements-cards img {
@@ -208,12 +209,21 @@ a {
         flex-direction: column-reverse;
     }
 
-    .hebergements-cards img{
-        width: 100%;
+    .hebergements-cards a{
+        width: 90%;
+    }
+
+    .hebergements-cards .card{
+        width: 320px;
+    }
+
+    .hebergements{
+        padding: 0;
     }
 
     .hebergements-and-populaires section {
         background-color: transparent;
+        padding: 0;
     }
 
     .populaires{
@@ -235,7 +245,7 @@ a {
     }
 
     .hebergements-cards img {
-        width: 360px;
+        width: 100%;
     }
 }
 
