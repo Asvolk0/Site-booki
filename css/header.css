@@ -84,7 +84,7 @@ form {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: ##0065FC;
+    color: #0065FC;
 }
 
 .fa-location-dot{
@@ -131,13 +131,17 @@ button .fa-magnifying-glass{
     margin-right: 10px;
 }
 
-.filterButton{
-    width: 100%;
+.filterButton, .filterButton > div{
     display: flex;
     justify-content: start;
     align-items: center;
     gap: 20px;
 }
+
+.filterButton{
+    width: 100%;
+}
+
 
 .filter > i{
     font-size: 22px;
@@ -214,20 +218,27 @@ button .fa-magnifying-glass{
     text-decoration: underline;
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1024px){
     .filters{
         flex-direction: column;
         align-items: start;
         margin-bottom: 20px;
     }
 
+    .populaires-cards{
+        width: 100%;
+    }
+
     nav ul .active::before{
         top: -14px;
     }
-
 }
 
-@media (max-width: 925px) {
+@media (max-width: 768px) {
+    .search-section h1{
+        font-size: 18px;
+    }
+
     nav{
         flex-direction: column;
         padding: 0;
@@ -263,15 +274,18 @@ button .fa-magnifying-glass{
         width: 100%;
     }
 
-    .filters div{
-        flex-wrap: wrap;
-        justify-content: start;
+    .filters > .filterButton{
         align-items: center;
         margin-bottom: 10px;
     }
 
     .filterButton{
         justify-content: center;
+        flex-direction: column;
+    }
+
+    .filterButton > div, .filter{
+        width: 100%;
     }
 
     .footer{
@@ -290,7 +304,6 @@ button .fa-magnifying-glass{
     }
 
     .filter{
-        width: 120px;
         font-size: 12px;
     }
 
