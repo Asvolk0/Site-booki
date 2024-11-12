@@ -22,10 +22,7 @@ nav ul {
     gap: 20px;
 }
 
-nav li:hover {
-    border-top: solid #0065FC;
-    color: #0065FC;
-}
+
 
 nav a {
     color: #0065FC;
@@ -235,8 +232,12 @@ button .fa-magnifying-glass{
 }
 
 @media (max-width: 768px) {
+    .main-container {
+        width: 100%;
+    }
+
     .search-section h1{
-        font-size: 18px;
+        font-size: 22px;
     }
 
     nav{
@@ -244,9 +245,32 @@ button .fa-magnifying-glass{
         padding: 0;
     }
 
-    header li:hover {
-        border-bottom: solid 2px #0065FC;
-        border-top-color: white;
+    header ul, header li {
+        width: 100%;
+    }
+
+    header li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        color: #000;
+    }
+
+    header li a {
+        color: #000;
+    }
+
+    header li:nth-child(2){
+        border-bottom: 2px #666 solid;
+    }
+
+    header .active a {
+        color: #0065FC;
+    }
+
+    header .active {
+        border-bottom: 2px #0065FC solid;
     }
 
     form button{
@@ -272,6 +296,7 @@ button .fa-magnifying-glass{
         justify-content: space-around;
         align-items: center;
         width: 100%;
+        gap: 0px;
     }
 
     .filters > .filterButton{
@@ -295,6 +320,13 @@ button .fa-magnifying-glass{
 
     .footer-section{
         margin-bottom: 30px;
+    }
+    .search-bar {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .location-input {
+        width: 100%;
     }
 }
 
