@@ -23,7 +23,6 @@
 
 .activities .activities-cards {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -51,19 +50,37 @@
 }
 
 /* Responsive styles */
-@media (max-width: 1450px) {
+@media (max-width: 1440px) {
     .activities .card2 {
         flex: 1 1 calc(33.333% - 20px); /* 3 cartes par rangée */
     }
 
     .activities{
-        margin: 0 20px;
+        padding: 0 25px;
     }
 }
 
-@media (max-width: 925px) {
+@media (max-width: 1024px){
+    .activities .card{
+        height: auto;
+    }
+
+    .activities{
+        margin-top: 25px;
+    }
+
+    .activities-card img{
+        height: 200px !important;
+    }
+}
+
+@media (max-width: 768px) {
     .activities .card2 {
         flex: 1 1 calc(50% - 20px); /* 2 cartes par rangée */
+    }
+
+    .activities h2 {
+        margin: 0;
     }
 
     .activities-cards{
@@ -74,23 +91,18 @@
     }
 
     .activities-card{
-        width: 80%;
+        width: 100%;
         border-radius: 20px 20px 0px 0px;
-    }
-
-    .activities-card img{
-        height: 200px !important;
     }
 
     .card-content h3{
         justify-content: start;
-        margin: 10px 0 10px 25px;
+        margin-top: 10px;
     }
-}
 
-@media (max-width: 768px) {
     .activities .card2 {
         flex: 1 1 100%; /* 1 carte par rangée */
         margin: 10px 0; /* Ajustement de la marge pour une mise en page en une seule colonne */
+        width: 100%;
     }
 }

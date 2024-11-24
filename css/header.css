@@ -1,13 +1,18 @@
+/* Points importants : Sémantique, W3C, détailler, difficultés, à quoi sert le html et le css, peut on faire du html sans css et inversement, découpe de la maquette, github etc */
+
 /****** General ***********/
-.logo {
-    font-size: 24px;
-    color: #0065FC;
-    font-weight: bold;
+.logo img {
+    width: 61.09px; /* mettre une taille à l'image */
 }
 
+.logo{
+    padding-top: 15px;
+}
+
+
 nav{
-    padding: 0 20px;
     width: 100%;
+    /* padding: 20px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,7 +21,30 @@ nav{
 nav ul {
     list-style: none;
     display: flex;
+    position: relative;
+    padding: 0;
     gap: 20px;
+}
+
+nav ul li:last-child a{
+    color: #000;
+}
+
+nav ul li{
+    padding-top: 15px;
+    border-top: 2px transparent solid;
+}
+
+.active{
+    border-top: 2px #0065FC solid;
+}
+
+nav ul li:last-child:hover{
+    border-top: 2px #0065FC solid;
+}
+
+nav ul li:last-child a:hover{
+    color: #0065FC;
 }
 
 nav a {
@@ -49,7 +77,7 @@ form {
 .search-bar {
     display: flex;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
     background-color: #fff;
 }
@@ -57,7 +85,6 @@ form {
 .location-input {
     display: flex;
     align-items: center;
-    padding: 10px;
     border-right: 1px solid #ccc;
 }
 
@@ -72,7 +99,33 @@ form {
     font-size: 16px;
 }
 
-button {
+.fa-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0065FC;
+}
+
+.fa-location-dot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    width: 50px;
+    height: 49px;
+    background-color: #F2F2F2;
+}
+
+.circle{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #D9D9D9;
+}
+
+form button {
     padding: 10px 20px;
     background-color: #0065FC;
     color: #fff;
@@ -81,11 +134,16 @@ button {
     font-size: 16px;
 }
 
+button .fa-magnifying-glass{
+    display: none;
+    color: white;
+}
+
 .filters {
     display: flex;
-    align-items: center;
+    align-items: start;
+    flex-direction: column;
     gap: 10px;
-    flex-wrap: wrap;
 }
 
 .filters span {
@@ -93,29 +151,37 @@ button {
     margin-right: 10px;
 }
 
-.filters > div{
+.filterButton, .filterButton > div{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    font-weight: bold;
+    gap: 20px;
 }
 
-.filters > div a{
-    margin: 0px 6px;
+.filterButton{
+    width: 100%;
+}
+
+
+.filter > i{
+    font-size: 22px;
+    color: #0065FC;
 }
 
 .filter {
+    width: 162px;
+    height: 50px;
+    font-size: 14px;
     display: flex;
     align-items: center;
-    gap: 5px;
-    padding: 8px 13px;
+    justify-content: center;
+    font-weight: bold;
+    gap: 10px;
     background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    text-decoration: none;
+    border: 2px solid #ccc;
+    border-radius: 25px;
     color: #333;
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin-bottom: 10px;
 }
 
 .filter:hover {
@@ -131,7 +197,15 @@ button {
     margin-top: 30px;
 }
 
+.inputText::placeholder {
+    font-weight: bold; /* Mettre le placeholder en gras */
+    color: black; /* Couleur du placeholder */
+    opacity: 1; /* Assure la visibilité du texte du placeholder */
+}
+
 .bottom-header {
+    display: flex;
+    gap: 10px;
     margin-top: 20px;
 }
 
@@ -164,17 +238,102 @@ button {
     text-decoration: underline;
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1024px){
+    nav{
+        padding: 0 20px;
+    }
+
     .filters{
         flex-direction: column;
         align-items: start;
         margin-bottom: 20px;
     }
+
+    .populaires-cards{
+        width: 100%;
+    }
+
+    nav ul .active::before{
+        top: -14px;
+    }
 }
 
-@media (max-width: 925px) {
+@media (max-width: 768px) {
+
+    body{
+        padding: 0;
+    }
+
+    .main-container {
+        width: 100%;
+    }
+
+    .search-section h1{
+        font-size: 22px;
+    }
+
     nav{
         flex-direction: column;
+        padding: 0;
+    }
+
+    header ul, header li {
+        width: 100%;
+    }
+
+    header li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        color: #000;
+    }
+
+    header li a {
+        color: #000;
+    }
+
+    header li:nth-child(2){
+        border-bottom: 2px #F2F2F2 solid;
+        font-weight: 0;
+    }
+
+    header li:nth-child(2):hover{
+        border-bottom: 2px #0065FC solid;
+    }
+
+    header li:nth-child(2):hover a{
+        color: #0065FC;
+    }
+
+    header li{
+        border-top: none !important;
+    }
+
+    header .active a {
+        color: #0065FC;
+    }
+
+    header .active {
+        border-bottom: 2px #0065FC solid;
+    }
+
+    form button{
+        width: 49px;
+        height: 49px;
+        border-radius: 15px;
+    }
+
+    form button .fa-magnifying-glass{
+        transform: translate(-50%, 0%);
+    }
+
+    button .fa-solid{
+        display: block;
+    }
+
+    button span{
+        display: none;
     }
 
     nav ul{
@@ -182,20 +341,21 @@ button {
         justify-content: space-around;
         align-items: center;
         width: 100%;
+        gap: 0px;
     }
 
-    .filters div{
-        flex-wrap: wrap;
-        justify-content: start;
+    .filters > .filterButton{
         align-items: center;
         margin-bottom: 10px;
     }
-    
-    .filters > div a{
-        width: 45%;
-        margin-bottom: 10px;
-        display: flex;
+
+    .filterButton{
         justify-content: center;
+        flex-direction: column;
+    }
+
+    .filterButton > div, .filter{
+        width: 100%;
     }
 
     .footer{
@@ -205,5 +365,26 @@ button {
 
     .footer-section{
         margin-bottom: 30px;
+    }
+    .search-bar {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .location-input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 350px){
+    form .inputText{
+        max-width: 150px;
+    }
+
+    .filter{
+        font-size: 12px;
+    }
+
+    .filter > i{
+        font-size: 15px;
     }
 }
