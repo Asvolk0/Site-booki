@@ -35,7 +35,11 @@ body {
     line-height: 1.6;
     max-width: 1440px;
     margin: 0 auto;
+<<<<<<< HEAD
     padding: 0 20px 20px 20px;
+=======
+    padding: 20px;
+>>>>>>> efbadb0536dab00dccf15d11e4df11647e96ab3f
 }
 
 .card {
@@ -48,9 +52,17 @@ body {
 .card:hover{
     transform: scale(1.03);
 }
+<<<<<<< HEAD
 /* 
 @media (max-width: 1440px){
     
+=======
+
+@media (max-width: 1440px){
+    body{
+        padding: 0;
+    }
+>>>>>>> efbadb0536dab00dccf15d11e4df11647e96ab3f
     header{
         padding: 8px 0;
     }

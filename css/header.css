@@ -5,6 +5,7 @@
     width: 61.09px; /* mettre une taille à l'image */
 }
 
+<<<<<<< HEAD
 .logo{
     padding-top: 15px;
 }
@@ -13,6 +14,12 @@
 nav{
     width: 100%;
     /* padding: 20px; */
+=======
+
+nav{
+    width: 100%;
+    padding: 20px;
+>>>>>>> efbadb0536dab00dccf15d11e4df11647e96ab3f
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,6 +33,7 @@ nav ul {
     gap: 20px;
 }
 
+<<<<<<< HEAD
 nav ul li:last-child a{
     color: #000;
 }
@@ -46,6 +54,9 @@ nav ul li:last-child:hover{
 nav ul li:last-child a:hover{
     color: #0065FC;
 }
+=======
+
+>>>>>>> efbadb0536dab00dccf15d11e4df11647e96ab3f
 
 nav a {
     color: #0065FC;
@@ -239,10 +250,13 @@ button .fa-magnifying-glass{
 }
 
 @media (max-width: 1024px){
+<<<<<<< HEAD
     nav{
         padding: 0 20px;
     }
 
+=======
+>>>>>>> efbadb0536dab00dccf15d11e4df11647e96ab3f
     .filters{
         flex-direction: column;
         align-items: start;
@@ -259,11 +273,14 @@ button .fa-magnifying-glass{
 }
 
 @media (max-width: 768px) {
+<<<<<<< HEAD
 
     body{
         padding: 0;
     }
 
+=======
+>>>>>>> efbadb0536dab00dccf15d11e4df11647e96ab3f
     .main-container {
         width: 100%;
     }
@@ -294,6 +311,7 @@ button .fa-magnifying-glass{
     }
 
     header li:nth-child(2){
+<<<<<<< HEAD
         border-bottom: 2px #F2F2F2 solid;
         font-weight: 0;
     }
@@ -308,6 +326,9 @@ button .fa-magnifying-glass{
 
     header li{
         border-top: none !important;
+=======
+        border-bottom: 2px #666 solid;
+>>>>>>> efbadb0536dab00dccf15d11e4df11647e96ab3f
     }
 
     header .active a {
